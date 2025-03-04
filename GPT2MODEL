@@ -1,0 +1,12 @@
+import subprocess
+
+# Define the path to the script and the checkpoint file
+path_to_transformers = "/path/to/transformers"
+script_path = f"{path_to_transformers}/models/megatron_gpt2/convert_megatron_gpt2_checkpoint.py"
+checkpoint_file = "megatron_gpt2_345m_v0_0.zip"
+
+# Construct the command
+command = ["python3", script_path, checkpoint_file]
+
+# Execute the command
+subprocess.run(command)
